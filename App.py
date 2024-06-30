@@ -13,18 +13,16 @@ def download_model(url, output):
     return output
 
 # URL de téléchargement direct de Google Drive
-url = 'https://drive.google.com/uc?id=1hEJdBpJuJJgMaOoS7NQ4PnGlftWkpbkK'  # Remplacez par votre lien de téléchargement direct
+url = 'https://drive.google.com/uc?id=1hEJdBpJuJJgMaOoS7NQ4PnGlftWkpbkK' 
 output = 'model_bunka.pkl'
 # Chemin du fichier modèle téléchargé
 model_path = download_model(url, output)
 bunka = joblib.load(model_path)
 
 # Chargement des données
-df_initial = pd.read_csv("Analyse textuelle/Traces numériques/df_youtube_final.csv")
-df_topics=pd.read_csv("Analyse textuelle/Traces numériques/df_youtube_with_topiccsv")
-# Remplacez par le chemin de votre fichier CSV
+df_initial = pd.read_csv("df_youtube_final.csv")
 
-# Titre principal
+# Titres
 st.title("**Projet Traces Numériques**")
 st.write("#### **M2 D2SN**")
 
