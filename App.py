@@ -46,12 +46,14 @@ fig = bunka.visualize_topics(width=800, height=800, colorscale='Portland', densi
 # Vérifier et supprimer les annotations ou titres indésirables
 fig.update_layout(title_text='', annotations=[])
 
+if st.checkbox("**Espace des topics :** "):
+    st.plotly_chart(fig)
+
 topic_dist=bunka.df_topics_
 if st.checkbox(" **Distribution des topics :** "):
     st.write(topic_dist)
 
-if st.checkbox("**Espace des topics :** "):
-    st.plotly_chart(fig)
+
 
 top_docs_per_topic=bunka.df_top_docs_per_topic_
 if st.checkbox(" **Tops vidéos par topic :** "):
