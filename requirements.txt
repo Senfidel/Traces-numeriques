@@ -1,7 +1,7 @@
-import streamlit as st
-import pandas as pd
-import joblib
-import gdown
-import plotly.express as px
-from bunkatopics import Bunka
-from langchain_community.embeddings import HuggingFaceEmbeddings
+streamlit
+pandas
+joblib
+gdown
+plotly
+bunkatopics
+langchain_community
