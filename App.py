@@ -20,8 +20,7 @@ model_path = download_model(url, output)
 bunka = joblib.load(model_path)
 
 # Chargement des données
-df_initial = pd.read_csv("df_youtube_final.csv", usecols=['doc_id', 'content', 'topic_id', 'topic_name', 'video_id', 'title',
-       'channel', 'comments', 'description', 'texte_français','texte_anglais'])
+df_initial = pd.read_csv("df_youtube_final.csv") # usecols=['doc_id', 'content', 'topic_id', 'topic_name', 'video_id', 'title','channel', 'comments', 'description', 'texte_français','texte_anglais']
 
 # Titres
 st.title("**Projet Traces Numériques**")
