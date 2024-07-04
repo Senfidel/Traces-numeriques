@@ -56,7 +56,7 @@ if st.checkbox(" **Distribution des topics :** "):
 
 
 top_docs_per_topic=bunka.df_top_docs_per_topic_
-if st.checkbox(" **Tops vidéos par topic :** "):
+if st.checkbox(" **Tops 20 vidéos par topic :** "):
     st.write(top_docs_per_topic)
 
 
