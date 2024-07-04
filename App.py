@@ -52,12 +52,3 @@ if st.checkbox("**Espace des topics :** "):
 topic_dist=bunka.df_topics_
 if st.checkbox(" **Distribution des topics :** "):
     st.write(topic_dist)
-
-#top_docs_per_topic=bunka.df_top_docs_per_topic_
-#if st.checkbox(" **Tops 20 vidéos par topic :** "):
- #   st.write(top_docs_per_topic)
-
-
-
-
-
