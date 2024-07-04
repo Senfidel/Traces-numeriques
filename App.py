@@ -55,11 +55,8 @@ if st.checkbox(" **Distribution des topics :** "):
 
 
 
-top_docs_per_topic=bunka.df_top_docs_per_topic_
+top_docs_per_topic=bunka.df_top_docs_per_topic_[5]
 
-
-# Pour chaque topic, garder les 5 premiers documents
-top_docs_per_topic = top_docs_per_topic.groupby('topic').head(5)
 if st.checkbox(" **Tops 20 vidéos par topic :** "):
     st.write(top_docs_per_topic)
 
